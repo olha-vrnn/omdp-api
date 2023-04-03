@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDb API</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <form action="" method="get">
+            <input type="search" placeholder="Write movie name" class="movie-input" id="movieName">
+            <input type="button" value="search" class="search-btn green-btn" id="seachBtn">
+        </form>
+
+        <div class="cards-block" id="cardsBlock">
+        </div>
+    </div>
+
+    <div class="modal-container">
+
+        <div class="modal-block">
+
+            <div class="modal-content">
+
+                <div class="modal-image">
+                    <img src="" alt="Poster" id="modalPoster">
+                </div>
+
+                <div class="movie-full-info">
+
+                    <div class="movie-title">
+                        <h2 id="modalTitle"></h2>
+                    </div>
+
+                    <p class="small-text" id="modalShortInfo"></p>
+                    <p id="modalPlot"></p>
+                    <span>Written by:</span><p id="modalWritten"> </p>
+                    <span>Directed by:</span><p id="modalDirected"></p>
+                    <span>Starring:</span><p id="modalStarring"></p>
+                    <span>BoxOffice:</span><p id="modalBoxOffice"></p>
+                    <span>Awards:</span><p id="modalAwards"></p>
+                    <span>Ratings:</span>
+                    <p id="modalRatings1"></p>
+                    <p id="modalRatings2"></p>
+                    <p id="modalRatings3"></p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
